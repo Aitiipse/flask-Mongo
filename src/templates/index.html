@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="../static/css/index.css">
+	<title>BIENVENIDO A LA PAGINA PRINCIPAL</title>
+</head>
+<body>
+{% extends './navbar.html' %}
+{% block body %}
+	<h1>REGISTRO DE USUARIOS</h1>
+	<form action="/guardar_user" method="POST">
+		<label for="name">Nombre</label>
+		<input type="text" name="nombre">
+		<label for="apellido">Apellido</label>
+		<input type="text" name="apellido">
+		<label for="telefono">Telefono</label>
+		<input type="number" name="telefono">
+		<label for="password">Contraseña</label>
+		<input type="password" name="password">
+		<input type="submit" value="Enviar">
+	</form>
+	<br><br><br>
+	<ul>
+	
+		{% endblock %}
+
+</body>
+</html>

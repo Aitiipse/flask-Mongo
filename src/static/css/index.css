@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+body {
+	background-color: rgb(88, 161, 170);
+	color: rgb(10, 8, 8);
+	font-family: 'Balsamiq Sans', cursive;
+	text-align: center;
+}
+
+h1 {
+	font-weight: 700;
+	color: #000000;
+}
+
+form{
+	background-color: rgb(14, 108, 145);
+	padding: 2%;
+	border-radius: 35pt;
+	margin: 7%;
+	margin-top: 3%;
+}
+
+input{
+	background-color: azure;
+	border-color: #6f7879;
+}
